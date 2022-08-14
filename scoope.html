@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Scope</title>
+</head>
+<body>
+<script>
+// varibles declared within a function scope are inaccessible outside the function whether declared with a let, var or const
+/*    
+function decl(){
+  let x = 2;
+}
+decl();    
+alert(x);
+*/
+// varibles declared within a block scope are inaccessible outside the block if declared using const or let but accessible when declared with a var
+// Accessible
+/*    
+{
+  var num = 2;
+}
+alert(num); 
+*/
+// Inaccessible
+/*    
+{
+  let num = 2;
+}
+alert(num); 
+*/
+// variables declared with global scope are accessible through out your program
+// Global scope
+/*
+var car = "Rolls Royce";
+function run(){    
+alert(car);
+}
+run();
+*/
+// Global variables defined with the var keyword belong to the window object:
+/*
+var carName = "Volvo";
+alert(window.carName);    
+*/   
+// Global variables defined with the let keyword don't belong to the window object:
+/*    
+let carName = "Volvo";
+alert(window.carName);    
+*/
+    
+</script>
+</body>
+</html>

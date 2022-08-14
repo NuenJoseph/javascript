@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>This</title>
+</head>
+<body>
+<!-- this refers to the HTML element that received the event: -->    
+<p onclick="this.innerHTML ='Paragraph Clicked';">click me!</p>
+<script>
+//When used in an object method, this refers to the object.
+/*
+var player ={name:"LionelMessi",height:1.69,weight:70,run:function (){
+    alert(this.name);   
+},tackle:function (){
+    alert("Player is tackling");
+}};
+*/
+// When used alone, this refers to the global object.
+/*    
+console.log(this);
+*/
+// In a function, the global object is the default binding for this.
+/*
+funtion th(){
+    console.log(this);
+}
+th();    
+*/
+// when used in a function, in strict mode, this is undefined.
+/*    
+"use strict";
+function th(){
+  console.log(this);  
+}
+th();
+*/
+// The call() and apply() methods are predefined JavaScript methods.
+//They can both be used to call an object method with another object as argument.  
+/*    
+const person1 = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+
+const person2 = {
+  firstName:"John",
+  lastName: "Doe",
+}
+
+// Return "John Doe":
+console.log(person1.fullName.call(person2));
+*/
+// With the bind() method, an object can borrow a method from another object.
+/*    
+const person = {
+  firstName:"John",
+  lastName: "Doe",
+  fullName: function () {
+    return this.firstName + " " + this.lastName;
+  }
+}
+
+const member = {
+  firstName:"Hege",
+  lastName: "Nilsen",
+}
+
+let fullName = person.fullName.bind(member);
+console.log(fullName());
+*/
+
+   
+</script>
+</body>
+</html>

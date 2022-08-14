@@ -1,0 +1,37 @@
+
+<html>
+    
+<head>
+<title>Objects</title>
+</head>
+    
+<body>
+
+<script>
+var player1 = {name:"Lionel Messi",height:1.69,weight:70};
+var player2 = {name:"Christiano",height:2.3,weight:80};
+
+var playerdetails = player1.name + " height is " + player1.height +" weight is "+ player1.weight;
+    
+alert(playerdetails);
+
+var playername = player2["name"];
+alert(playername);
+    
+function run(){
+   alert("Player is running"); 
+}
+
+function tackle(){
+    alert("Player is tackling");
+}    
+    
+var p1 = {name:"Lionel Messi",height:1.69,weight:70,run:run(),tackle:tackle()};
+p1.run();
+p1.tackle();
+    
+</script>
+      
+</body>
+    
+</html>

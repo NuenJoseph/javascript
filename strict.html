@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>Strict</title>
+</head>
+<body>
+<script>
+/*   
+"use strict";
+myFunction();
+
+function myFunction() {
+  y = 3.14;   // This will also cause an error because y is not declared
+}  
+*/
+/*
+x = 3.14;       // This will not cause an error.
+myFunction();
+
+function myFunction() {
+  "use strict";
+  y = 3.14;   // This will cause an error
+}
+*/ 
+// Using a variable, without declaring it, is not allowed:
+/*    
+"use strict";
+x = 3.14; 
+*/
+// Using an object, without declaring it, is not allowed:
+/*
+"use strict";
+x = {p1:10, p2:20};
+*/
+// Deleting a variable (or object) is not allowed.
+/*
+"use strict";
+let x = 3.14;
+delete x; 
+*/
+// Deleting a function is not allowed  
+/*
+ "use strict";
+function x(p1, p2) {};
+delete x;                // This will cause an error  
+*/
+// Duplicating a parameter name is not allowed:
+/*
+ "use strict";
+function x(p1, p1) {};   // This will cause an error 
+*/
+//Octal numeric literals are not allowed:
+/*
+"use strict";
+let x = 010;
+*/
+//Octal escape characters are not allowed:    
+/*    
+"use strict";
+let x = "\010";            // This will cause an error
+*/
+// Writing to a read-only property is not allowed:
+/*    
+"use strict";    
+const ob = {y:5};
+Object.defineProperty(ob, "x", {value:20, writable:false});
+ob.x = 5;    
+console.log(ob);    
+*/
+// Writing to a get-only property is not allowed:
+/*
+ "use strict";
+const obj = {get x() {return 0} };
+obj.x = 3.14;            // This will cause an error 
+*/
+// Deleting an undeletable property is not allowed:
+/*
+ "use strict";
+delete Object.prototype; // This will cause an error 
+*/
+// eval will cause an error
+/*
+"use strict";
+let eval = 3.14;
+*/
+// use of arguments will cause an error
+/*
+ "use strict";
+let arguments = 3.14;    // This will cause an error
+*/
+//The with statement is not allowed:
+/*
+"use strict";
+with (Math){x = cos(2)}; // This will cause an error 
+*/
+// For security reasons, eval() is not allowed to create variables in the scope from which it was called:
+/*
+"use strict";
+eval ("let x = 2");
+alert (x); 
+*/
+// If the object is not specified, functions in strict mode will return undefined and functions in normal mode will return the global object (window):
+/*
+"use strict";
+function myFunction() {
+  alert(this); // will alert "undefined"
+}
+myFunction(); 
+*/
+
+</script>
+</body>
+</html>

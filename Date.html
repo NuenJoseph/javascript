@@ -1,0 +1,53 @@
+<html>
+    
+<head>
+<title>Dates</title>
+</head>
+    
+<body>
+ 
+    
+<script>
+//new Date() creates a new date object with the current date and time:
+/*
+var mydate = new Date();
+alert(mydate);
+// custom date format new Date(year, month, day, hours, minutes, seconds, milliseconds) month 0 - 11
+/*
+var day = new Date(2005, 11, 2, 12);
+alert(day);
+*/
+// Date from a string 
+/*
+const d = new Date("Feburary 13, 2014 11:13:00");
+alert(d);
+*/
+// The toDateString() method converts a date to a date string:
+/*
+const d = new Date("Feburary 13, 2014 11:13:00");
+alert(d.toDateString());
+*/
+//The toISOString() method converts a date to a date string, using the ISO standard format:
+/*
+const d = new Date("Feburary 13, 2014 11:13:00");
+alert(d.toISOString());
+*/
+/* Writing the date in ISO format */
+/*
+const d = new Date("2022-04-23T12:00:00");
+alert(d);
+*/
+//Short dates are written with an "MM/DD/YYYY" syntax like this:
+/*
+const d = new Date("05/03/2012");
+alert(d);
+*/
+//Date.parse() returns the number of milliseconds between the date and January 1, 1970:
+/*
+const d = Date.parse("05/03/2012");
+alert(d);
+*/
+</script>
+      
+</body>    
+</html>

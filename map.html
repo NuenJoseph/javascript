@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Maps</title>
+</head>
+<body>
+<script>
+const fruitPrices = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+// You can add elements to a Map with the set() method:
+fruitPrices.set("avocado",250);
+// get retrieves the value of a given key
+//alert(fruitPrices.get("avocado"))
+// size returns no. of elements in the Map
+///The delete() method removes a Map element:
+// fruitPrices.delete("bananas");
+// alert(fruitPrices.size);
+// has returns true if the key exists within a map
+/*
+var x = fruitPrices.has("apples");
+alert(x);
+*/
+// The forEach() method calls a function for each key/value pair in a Map:
+/*
+let text = "";
+fruitPrices.forEach (function(value, key) {
+ var s =`map key is ${key} the value is ${value}`
+  alert(s);
+});
+*/
+// The entries() method returns an iterator object with the [key, values] in a Map:
+// List all entries
+let text = "";
+for (const x of fruitPrices.entries()) {
+ var s =`map key and value is ${x}`;
+ alert(s);
+
+}  
+
+    
+</script>
+</body>
+</html>

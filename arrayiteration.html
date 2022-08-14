@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>Array Iteration</title>
+</head>
+<body>
+<script>
+// forEach goes through every element of the array and performs a function 
+const numbers = [1,2,3,4,5,6];
+numbers.forEach(function(value,index){
+    numbers[index] = value*2;
+});
+
+// squaring a single element of the array
+/*
+numbers[2] = numbers[2]**2;
+alert(numbers);
+*/
+alert(numbers);
+// Map function used to change values of an entire array 
+/*
+var numbers1 = [45, 4, 9, 16, 25];
+numbers1 = numbers1.map(function(value, index, array) {
+  return value ** 2;
+});
+alert(numbers1);
+*/
+// Filters values of an array based on the given condition
+/*
+var nums = [45, 4, 9, 16, 25];
+nums = nums.filter(function (value, index, array) {
+  return value > 18;
+}); 
+alert(nums);
+*/
+// Reduce performs an operation on the entire array to produce one value
+/*
+var red = [1, 2, 3, 4, 5];
+red = red.reduce(sum);
+function sum(total, value, index, array) {
+  return total + value;
+}
+alert(red);
+*/
+// Every checks if all the values in an array meet a certain criteria
+/*
+var vals = [45, 4, 9, 16, 25];
+vals = vals.every(myFunction);
+function myFunction(value, index, array) {
+  return value > 18;
+}
+alert(vals);
+*/
+// Some checks if one of the values in an array meets a certain criteria
+/*
+let nums = [6, 20, 9, 16, 5];
+let someOver18 = nums.some(myFunction);
+function myFunction(value, index, array) {
+  return value > 18;
+}
+alert(someOver18);
+*/
+// Index of returns the first index of the occurence of an element
+/*
+var fruit = ["Apple", "Orange", "Apple", "Mango"];
+let idx = fruit.indexOf("Apple");
+alert(idx);
+*/
+// last Index of returns the last index of the occurence of an element
+/*
+const myfruits = ["Apple", "Orange", "Apple", "Mango"];
+let position = myfruits.lastIndexOf("Apple");
+alert(position);    
+*/
+// Find returns the first value that meets a certain criteria    
+/*
+const nums = [4, 9, 16, 25, 29];
+let first = nums.find(myFunction);
+function myFunction(value, index, array) {
+  return value > 18;
+}
+*/
+// Find Index returns the index of the first value that meets a certain criteria
+/*
+const nums = [4, 9, 16, 25, 29];
+let first = nums.findIndex(myFunction);
+function myFunction(value, index, array) {
+  return value > 18;
+} 
+alert(first);
+*/
+// Array from a string
+/*
+let myarray = Array.from("ABCDEFG");
+alert(myarray[1]);
+*/
+// Includes checks if an element exists in an array
+/*
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let myval = fruits.includes("Mango"); // is true
+alert(myval);
+*/
+</script>
+</body>

@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>json</title>
+</head>
+<body>
+<script>
+// JSON stands for JavaScript Object Notation
+// Javascript object
+// var player = {name:"LionelMessi",height:1.69,weight:70};
+// JSON equivalent
+/*
+{"name":"LionelMessi",height:1.69,"weight":70}
+*/
+/*
+JSON Syntax Rules
+    Data is in name/value pairs
+    Data is separated by commas
+    Curly braces hold objects
+    Square brackets hold arrays
+*/
+// JSON names require double quotes. JavaScript names do not.
+// Just like in JavaScript, an array can contain objects:
+/*
+"employees":[
+  {"firstName":"John", "lastName":"Doe"},
+  {"firstName":"Anna", "lastName":"Smith"},
+  {"firstName":"Peter", "lastName":"Jones"}
+]
+*/
+/*
+// Converting a JSON Text to a JavaScript Object
+var students = '{"students":[{"fname":"JamesMaina","grade":4,"age":10},{"fname":"AlicePrice","grade":3,"age":9}]}';
+students = JSON.parse(students);
+// getting alice's first name 
+console.log(students.students[1].fname);
+/*
+// The JSON.stringify() method converts a JavaScript object or value to a JSON string
+/*
+var player = {name:"LionelMessi",height:1.69,weight:70};
+var playerStr = JSON.stringify(player);
+console.log(playerStr);
+*/    
+</script>
+</body>
+</html>

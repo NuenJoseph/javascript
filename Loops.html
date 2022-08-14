@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>Loop</title>
+</head>
+<body>
+<script>
+// For loop - loops through a block of code for a given number of times
+/*
+for(var i=1;i<=10;i++){
+alert(i);
+}
+*/
+// for loop through the elements of an array
+/*
+var cars = ["Ferrari","Lambo","Buggatti","Masseratti","GTR"];
+for(var i=0;i<cars.length;i++){
+alert(cars[i]);
+}
+*/
+// For in allows you to access object propertiesand values
+/*
+var player1 = {name:"Lionel Messi",height:1.69,weight:70};
+for(var x in player1){
+    alert(player1[x]);
+}
+*/
+// For in access array elements
+/*
+const numbers = [45, 4, 9, 16, 25];
+for (let x in numbers) {
+  alert(numbers[x]);
+}
+*/
+// For in access array indices
+/*
+const numbers = [45, 4, 9, 16, 25];
+for (let x in numbers) {
+  alert(x);
+}
+*/
+// forEach loops through all values, indices in an array
+/*
+const numbers = [45, 4, 9, 16, 25];
+numbers.forEach(function(value, index, array){
+    alert([value,index,array]);    
+});
+*/
+// loops through individual characters
+/*
+let language = "JavaScript";
+for (let x of language) {
+alert(x);
+}
+*/
+// For of accesses array values
+
+const numbers = [45, 4, 9, 16, 25];
+for (let x of numbers) {
+  alert(x);
+}
+/* 
+// The while loop loops through a block of code as long as a specified condition is true.
+/*
+var i=1;
+while(i<=10){
+    console.log(i);
+    i++;
+}
+console.log("we are outside the loop");
+*/
+// This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+/*
+var i=1;
+do{
+console.log(i);    
+i++;
+}while(i<=10);
+*/
+// iterating over a set with the for of loop
+/*
+const letters = new Set(["a","b","c","c"]);
+for (const x of letters) {
+alert(x);
+}
+*/
+//  iterating over a map with a for of loop
+/*
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+for (const x of fruits) {
+    alert(x);
+}
+*/
+
+</script>
+</body>
+</html>

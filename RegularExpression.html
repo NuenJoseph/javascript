@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>Regexp</title>
+</head>
+<body>
+<script>
+// Search returns the index of where the results start
+/*
+let text = "Visit W3Schools!";
+let n = text.search("W3Schools");
+alert(n);
+*/
+// Use a regular expression to do a case-insensitive search witg /i
+/*
+let text = "Visit W3Schools!";
+let n = text.search(/W3Schools/i);
+alert(n);
+*/
+// text replacement without regular expressions
+/*
+let text = "Visit Microsoft!";
+let result = text.replace("Microsoft", "W3Schools");
+*/
+// text replacement with regular expressions
+/*
+let text = "Visit Microsoft!";
+let result = text.replace(/microsoft/i, "apple");
+alert(result);
+*/
+// regular expression to do a GLOBAL search/replacement with /g
+/*
+let text = "Is this all there is?";
+let result = text.replace(/is/g,"zzz");
+alert(result);
+*/
+// regular expression to do a multiline search/replacement with /m
+/*
+let text = "\nIs th\nis it?";
+let result = text.replace(/^is/m,"zzz");
+alert(result);
+//Do a global search for the character "h" in a string
+/*
+let text = "i saw a butterfly";
+let result = text.replace(/[utter]/i,"ig bu");
+alert(result);
+*/
+//Do a global search for any of the specified alternatives 
+/*
+let text = "i saw a butterfly";
+let result = text.match(/(saw|frog)/g);
+alert(result);
+*/
+// /d is a metacharacter for finding digits
+/*
+let text = "Give 100%679!"; 
+let result = text.match(/\d/g);
+alert(result);
+*/
+// /s is a metacharacter for finding whitespace
+/*
+let text = "Give 100%679!"; 
+let result = text.replace(/\s/g,"_");
+alert(result);
+*/
+// /b is a metacharacter for replacing letters at the beginning of a word
+/*
+let text = "HELLO, LOOK AT YOU!"; 
+let result = text.replace(/\bLO/,"#");
+alert(result);
+*/
+// /u represents a search for a hexadecimal digit    
+/*
+let text = "Visit A W3Schools. Hello World!"; 
+let result = text.match(/\u0041/g);
+alert(result);
+*/
+// Do a global search for at least one "o" in a string
+/*
+let text = "Hellooo World! Hello W3Schools!"; 
+let result = text.match(/o+/g);
+alert(result);
+*/
+// Do a global search for an "l", followed by zero or more "o" characters
+//let text = "Hellooo World! Hello W3Schools!"; 
+//let result = text.match(/lo*/g);
+//alert(result);
+// Do a global search for a "1", followed by zero or one "0" characters
+/*    
+let text = "1, 100 or 1000?";
+let result = text.match(/10?/g);
+alert(result);
+*/
+// test returns true or false if the pattern exists inside of the string
+/*    
+var result = /e/.test("The best things in life are free!");    
+alert(result);
+*/ 
+// exec returns the first index if the pattern exists inside of the string
+/*  
+var result = /e/.exec("The best things in life are free!");    
+alert(result[0]);
+*/
+</script>
+</body>
+</html>

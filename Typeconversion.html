@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>type conversion</title>
+</head>
+<body>
+<script>
+ // Number() Returns a number, converted from its argument
+   /*
+    var y = "50.87";
+    alert(Number(y)*2);
+    */
+    // parseInt() Returns a truncated integer
+    /*
+    var y = "50.87";
+    alert(parseInt(y)*2);
+    */
+    // parseFloat() Returns a floating point number with decimal places
+    /*
+    var y = "50.87";
+    alert(parseFloat(y));
+    */
+    // The unary + operator can be used to convert a variable to a number:
+    /*
+let y = "5";      // y is a string
+     y =  typeof +y; 
+    alert(y)
+    */
+    // The global method String() can convert numbers to strings.
+    /*
+    let x = 100;
+    x = typeof String(x);
+    alert(x);
+    */
+    /*
+    let x = 100;
+    x = typeof x.toString();
+    alert(x);
+    */
+    // converts the date to milliseconds
+    /*
+    d = new Date();
+    Number(d)
+    */
+// converting booleans to numbers returns 0 or 1 depending on the boolean value
+    /*
+    Number(false)     // returns 0
+    Number(true)      // returns 1 
+    */
+    /*
+    The global method String() can convert booleans to strings you can also use toString()
+    String(false)      // returns "false"
+    String(true)       // returns "true" 
+    false.toString()   // returns "false"
+    true.toString()    // returns "true"
+    */
+</script>
+</body>
+</html>

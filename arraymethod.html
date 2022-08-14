@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Array Methods</title>
+</head>
+<body>
+
+<p id="mp">Hello from my paragraph </p>
+<input id="demo" type ="text">
+<button id="nj" onclick="push();">push</button> 
+<button id="btn" onclick="pop();">Pop</button>
+<button id="btn" onclick="shift();">shift</button>
+<button id="btn" onclick="unshift();">Unshift</button>
+<button id="btn" onclick="merge();">merge</button>  
+<script>
+const get= document.getElementById("mp");
+const search = document.getElementById("demo");
+const aya = document.getElementById("nj");
+    
+var cars = ["Tesla","lambo","Audi"];
+
+//Push adds an element to an array
+function push(){
+cars.push(search.value);
+get.innerHTML = cars;     
+};
+// array method pop removes last element from array
+function pop(){
+cars.pop();
+get.innerHTML = cars; 
+}
+//array method shift removes first element from array
+function shift(){
+cars.shift();
+get.innerHTML = cars; 
+}
+//array method unshift adds fisrt element to array
+function unshift(){
+cars.unshift(search.value);
+get.innerHTML = cars;  
+}
+// array merge
+function merge(){
+const cars2 = ["Lotus","Maseratti","Honda"];
+cars=cars.concat(cars2);
+get.innerHTML = cars; 
+}
+</script>
+</body>
+</html>

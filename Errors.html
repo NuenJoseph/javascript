@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>Errors</title>
+</head>
+<body>
+<script>
+"use strict";
+// handling an undefined error using try and catch
+/*    
+alert("The Begining");
+try{    
+x = "Hello";
+}catch(error){
+  console.log(error.message);
+  alert("Please declare");     
+}
+alert("The End");   
+*/
+// throwing an error means creating an error
+/*    
+throw "My error";  
+*/
+// using finally to execute regardless of whether an error was encountered
+/*   
+alert("The Begining");
+try{    
+var x = "Hello";
+}catch(error){
+  console.log(error.message);
+  alert("Please declare");     
+}finally{
+    alert("Executed regardless of an error");
+}
+alert("The End"); 
+*/
+// Reference error
+// A ReferenceError is thrown if you use (reference) a variable that has not been declared:    
+/*
+try{    
+x = "Hello";
+}catch(error){
+  console.log(error.name);
+}
+*/
+// A SyntaxError is thrown if you try to evaluate code with a syntax error.
+/*    
+try {
+  eval("alert('Hello)");   // Missing ' will produce an error
+}
+catch(err) {
+  alert(err.name);
+}    
+*/
+// A TypeError is thrown if you use a value that is outside the range of expected types:
+/*    
+let num = 1;
+try {
+  num.toUpperCase();   // You cannot convert a number to upper case
+}
+catch(err) {
+ alert(err.name);
+}
+*/
+// A SyntaxError is thrown if you try to evaluate code with a syntax error.
+/*    
+try {
+  eval("alert('Hello)");   // Missing ' will produce an error
+}
+catch(err) {
+  alert(err.name);
+}    
+*/
+// A TypeError is thrown if you use a value that is outside the range of expected types:
+/*    
+let num = 1;
+try {
+  num.toUpperCase();   // You cannot convert a number to upper case
+}
+catch(err) {
+ alert(err.name);
+}
+*/
+// A URIError is thrown if you use illegal characters in a URI function:
+/*    
+try {
+decodeURI("%%%");   // You cannot URI decode percent signs
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err.name;
+}
+*/
+</script>
+</body>    
+</html>

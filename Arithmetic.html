@@ -1,0 +1,77 @@
+<html>
+    
+<head>
+<title>Document</title>
+</head>
+    
+<body>
+
+<h1 id ="nj">HEADER TAG</h1> 
+    
+<script>
+/*
+var x = 0;
+x = 1;
+window.console.log(x);
+window.document.write(x);
+const pi = 3.142;
+window.console.log(pi);
+
+window.document.write(pi)
+*/
+var myheader= document.getElementById("nj");
+myheader.innerHTML="This is the way";
+myheader.style.color="green";
+myheader.style.backgroundColor="black";
+    
+var mys="My string";
+myheader.innerHTML=mys;
+var mys= "My string" + "Nigga";
+myheader.innerHTML= mys;
+    
+//addition
+var x = 32.00;
+var y= 5 ;
+var result = x + y ;
+document.writeln("The sum is " + result);
+    
+// Substruction
+result = x - y ;
+document.writeln("The difference is " + result);
+    
+//Multiplication
+result = x * y ;
+document.writeln("The product is " + result);
+
+//Division
+result = x / y ;
+document.writeln("The division is " + result);
+  
+//Exponential
+result = x ** 2 ;
+document.writeln("The exponent of x to power 2 is " + result);
+    
+//Modulus
+result = x % 3 ;
+document.writeln("The remainder of x divided by 4 is " + result);
+    
+//INCREMENT
+x++;
+result= x;
+document.writeln("The increment of x by one is " + result);
+
+//Decrement
+x--;
+result= x;
+document.writeln("The decrement of x by one is " + result);
+
+// PLUS EQUALS
+x+=y;    
+// x = x + y
+result = x;
+document.writeln("The sum of x with y is " + result)  
+
+</script>
+</body>
+    
+</html>

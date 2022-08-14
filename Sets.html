@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Sets</title>
+</head>
+<body>
+<script>
+    // A set is a list of items that contains unique elements, so there can be no duplicate elements
+    // Create a Set
+const letters = new Set();
+
+// Add Values to the Set
+letters.add("a");
+letters.add("b");
+letters.add("c");
+    
+//for each iterates over individual elements
+/*
+letters.forEach(function(x){
+    alert(x);
+});
+*/
+// values returns at iterator object containing set elements
+
+for(x of letters.values()){
+    alert(x);
+}
+</script>
+</body>
+</html>    
